@@ -10,7 +10,7 @@ import CoreData
 
 class NewTaskViewController: UIViewController {
     
-    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    private let context = CoreDataManager.shared.context
     
     private lazy var taskTextField: UITextField = {
         let textField = UITextField()
